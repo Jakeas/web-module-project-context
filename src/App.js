@@ -18,7 +18,7 @@ function App() {
 	};
 
 	return (
-		<CartContext.Provider value={{cart}}>
+		<CartContext.Provider value={{cart, setCart}}>
 			<ProductContext.Provider value={{products, addItem}}>
 				<div className="App">
 					<Navigation />
